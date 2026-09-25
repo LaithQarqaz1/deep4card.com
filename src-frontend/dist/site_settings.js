@@ -7,7 +7,7 @@
   var defaultSettings = {
     "firebase": {
         "apiKey": "AIzaSyDWP0em25PETb6XgNin1z5BnlzbpQcjAyM",
-        "authDomain": "deep4card.firebaseapp.com",
+        "authDomain": "deep4card.com",
         "projectId": "deep4card",
         "storageBucket": "deep4card.firebasestorage.app",
         "messagingSenderId": "431974320102",
