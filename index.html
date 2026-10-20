@@ -92,7 +92,7 @@
   <noscript><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" crossorigin="anonymous"></noscript>
-  <link rel="stylesheet" href="src-frontend/dist/site-bundle.css?v=622831242c">
+  <link rel="stylesheet" href="src-frontend/dist/site-bundle.css?v=2f34356242">
 
   <!-- End unified startup assets -->
   
@@ -282,7 +282,9 @@
                 <div class="divider">أو تابع بحساب</div>
                 <div class="auth-social">
                   <button class="social-btn btn-google" id="googleLogin" type="button" aria-label="تسجيل دخول بواسطة Google" onclick="try{return (window.__triggerGoogleLogin?window.__triggerGoogleLogin('login',this):false);}catch(_){return false;}"><i class="fa-brands fa-google" aria-hidden="true"></i></button>
+                  <button class="social-btn btn-passkey" id="passkeyLogin" type="button" aria-label="الدخول بمفتاح مرور" title="الدخول بمفتاح مرور"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i><span>مفتاح مرور</span></button>
                 </div>
+                <div id="passkeyLoginStatus" class="passkey-login-status" role="status" aria-live="polite" hidden></div>
                 <p class="error-message" id="loginError"></p>
               </form>
 
@@ -339,7 +341,10 @@
                 <div class="divider">أو تابع بحساب</div>
                 <div class="auth-social">
                   <button class="social-btn btn-google" id="googleLoginRegister" type="button" aria-label="تسجيل دخول بواسطة Google" onclick="try{return (window.__triggerGoogleLogin?window.__triggerGoogleLogin('register',this):false);}catch(_){return false;}"><i class="fa-brands fa-google" aria-hidden="true"></i></button>
+                  <button class="social-btn btn-passkey" id="passkeyLoginRegister" type="button" aria-label="الدخول لحساب موجود بمفتاح مرور" title="الدخول لحساب موجود بمفتاح مرور"><i class="fa-solid fa-fingerprint" aria-hidden="true"></i><span>مفتاح مرور</span></button>
                 </div>
+                <p class="passkey-register-hint">مفتاح المرور للدخول إلى حساب موجود؛ أضفه من الأمان بعد إنشاء حسابك.</p>
+                <div id="passkeyRegisterStatus" class="passkey-login-status" role="status" aria-live="polite" hidden></div>
                 <p class="error-message" id="registerError"></p>
                 <p class="legal-consent-note">بإنشاء حساب فإنك توافق على <a href="#/privacy">سياسة الخصوصية</a> و<a href="#/terms">شروط الاستخدام</a></p>
               </div>
@@ -789,7 +794,7 @@
   </script>
   <!-- /store-identity:jsonld -->
   <script src="src-frontend/dist/site_settings.js?v=4862bbce15"></script>
-  <script src="src-frontend/dist/site-bundle.js?v=989b34b9c4"></script>
+  <script src="src-frontend/dist/site-bundle.js?v=99ddc6a4f0"></script>
   <!-- End runtime scripts -->
 </body>
 </html>
