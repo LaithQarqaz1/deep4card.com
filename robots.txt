@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://deep4card.com/sitemap.xml
+Host: deep4card.com
